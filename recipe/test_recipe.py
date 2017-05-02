@@ -19,4 +19,4 @@ with urlopen(data['source']['url']) as fp:
     m.update(fp.read())
 
 if m.hexdigest() != data['source']['sha256']:
-    print('bad digest')
+    raise SystemExit('error: bad digest')
