@@ -3,12 +3,15 @@
 
 from hashlib import sha256
 from io import StringIO
+from os import path
 from urllib.request import urlopen
 
 from jinja2 import Template
 import yaml
 
-with open('meta.yaml') as fp:
+here = path.dirname(path.abspath(__file__))
+
+with open('{}/meta.yaml'.format(here)) as fp:
     t = Template(fp.read())
 
 io = StringIO(t.render(()))
