@@ -14,14 +14,16 @@ Summary: Fast read/write of AVRO files
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/fastavro-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fastavro-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/fastavro-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/fastavro-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/fastavro-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/fastavro-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/fastavro-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/fastavro-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/fastavro-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/fastavro-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/fastavro-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/fastavro-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fastavro/badges/version.svg)](https://anaconda.org/conda-forge/fastavro)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fastavro/badges/downloads.svg)](https://anaconda.org/conda-forge/fastavro)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-fastavro-green.svg)](https://anaconda.org/conda-forge/fastavro) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/fastavro.svg)](https://anaconda.org/conda-forge/fastavro) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/fastavro.svg)](https://anaconda.org/conda-forge/fastavro) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/fastavro.svg)](https://anaconda.org/conda-forge/fastavro) |
 
 Installing fastavro
 ===================
