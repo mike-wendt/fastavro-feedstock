@@ -1,6 +1,6 @@
 {% set name = "fastavro" %}
-{% set version = "0.19.2" %}
-{% set sha256 = "7a9ec7759ffb7b5637aabc373c8a698432588a1cdb5ecc39a3b70419943e003c" %}
+{% set version = "0.19.3" %}
+{% set sha256 = "f80d85e678e75e0170a3e5fc8296a5bea256b26d8edee8cd0bb8e7f76a6f66a2" %}
 
 package:
     name: {{ name }}
@@ -12,7 +12,7 @@ source:
     sha256: {{ sha256 }}
 
 build:
-    number: 1
+    number: 0
     script: python setup.py install --single-version-externally-managed --record record.txt
 
 
