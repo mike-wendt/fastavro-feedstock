@@ -34,10 +34,10 @@ test:
         - {{ name }}
 
 about:
-    home: https://github.com/tebeka/{{ name }}
+    home: https://github.com/fastavro/{{ name }}
     license: MIT
     summary: Fast read/write of AVRO files
-    dev_url: https://github.com/tebeka/{{ name }}
+    dev_url: https://github.com/fastavro/{{ name }}
 
 extra:
     recipe-maintainers:
