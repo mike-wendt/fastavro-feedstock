@@ -1,7 +1,7 @@
 About fastavro
 ==============
 
-Home: https://github.com/tebeka/fastavro
+Home: https://github.com/fastavro/fastavro
 
 Package license: MIT
 
