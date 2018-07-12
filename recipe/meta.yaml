@@ -1,6 +1,6 @@
 {% set name = "fastavro" %}
-{% set version = "0.21.2" %}
-{% set sha256 = "8cb16df617a3702c1be556eb3d2fdfa1654360f06b80696477715d95d7417da8" %}
+{% set version = "0.21.3" %}
+{% set sha256 = "910cbd2b001d928b5d5ceb690ab44cb77445488a1c9c2050bf5acb90571d99bc" %}
 
 package:
     name: {{ name }}
