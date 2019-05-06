@@ -1,47 +1,49 @@
-{% set name = "fastavro" %}
 {% set version = "0.21.22" %}
-{% set sha256 = "082cfe1a7c4b7bd74be54739b1f287861aec5201c07587c9056d942c9367eb68" %}
 
 package:
-    name: {{ name }}
-    version: {{ version }}
+  name: fastavro
+  version: {{ version }}
 
 source:
-    fn: {{name}}-{{ version }}.tar.gz
-    url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/f/fastavro/fastavro-{{ version }}.tar.gz
+  sha256: 082cfe1a7c4b7bd74be54739b1f287861aec5201c07587c9056d942c9367eb68
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
-
+  number: 1
+  script:
+    - export FASTAVRO_USE_CYTHON=1  # [not win]
+    - set FASTAVRO_USE_CYTHON=1  # [win]
+    - "{{ PYTHON }} -m pip install . --no-deps -vv"
+  entry_points:
+    - fastavro = fastavro.__main__:main
 
 requirements:
-    build:
-        - {{ compiler('c') }}
-    host:
-        - python
-        - cython
-        - setuptools
-    run:
-        - python
+  build:
+    - {{ compiler('c') }}
+  host:
+    - python
+    - cython
+    - pip
+  run:
+    - python
 
 test:
-    requires:
-        - nose
-        - flake8
-    imports:
-        - {{ name }}
+  requires:
+    - nose
+    - flake8
+  imports:
+    - fastavro
 
 about:
-    home: https://github.com/fastavro/{{ name }}
-    license: MIT
-    summary: Fast read/write of AVRO files
-    dev_url: https://github.com/fastavro/{{ name }}
+  home: https://github.com/fastavro/fastavro
+  license: MIT
+  license_file: LICENSE
+  summary: Fast read/write of AVRO files
+  dev_url: https://github.com/fastavro/fastavro
 
 extra:
-    recipe-maintainers:
-        - cpcloud
-        - mariusvniekerk
-        - scottbelden
-        - tebeka
+  recipe-maintainers:
+    - cpcloud
+    - mariusvniekerk
+    - scottbelden
+    - tebeka
